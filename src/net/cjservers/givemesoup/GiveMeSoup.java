@@ -29,6 +29,7 @@ public class GiveMeSoup extends JavaPlugin implements Listener {
 							inv.setItem(i, new ItemStack(Material.MUSHROOM_SOUP));
 						}
 					}
+					return true;
 				}
 			}
 		}
