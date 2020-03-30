@@ -1,10 +1,9 @@
 name: GiveMeSoup
-version: 1.0.1
+version: 1.0.2
 description: Desc
 author: cj89898
 website: http://www.cjservers.net/
-main: net.cjservers.givemesoup.GiveMeSoup
-api-version: 1.15
+main: net.cjservers.givemesoup.GiveMeSou
 commands:
   givemesoup:
     description: Fills inventory with soup
