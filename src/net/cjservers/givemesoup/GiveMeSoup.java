@@ -1,20 +1,19 @@
 package net.cjservers.givemesoup;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class GiveMeSoup extends JavaPlugin implements Listener {
+public class GiveMeSoup extends JavaPlugin implements CommandExecutor {
 	
 	@Override
 	public void onEnable() {
-		Bukkit.getServer().getPluginManager().registerEvents(this, this);
+		this.getCommand("givemesoup").setExecutor(this);
 	}
 	
 	@Override
